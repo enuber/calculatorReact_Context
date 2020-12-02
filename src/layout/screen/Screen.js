@@ -3,10 +3,10 @@ import React from 'react';
 import ResultScreen from './ResultScreen';
 import ComputationScreen from './ComputationScreen';
 
-const screen = (props) => {
+const screen = () => {
     return(
     <section className="screen">
-        <ResultScreen>{props.result}</ResultScreen>
+        <ResultScreen />
     </section>
     )
 };

@@ -1,11 +1,15 @@
 import '../styles/styles.css';
 import React from 'react';
 import Calculator from '../layout/Calculator';
+import { CalculatorStore } from '../contexts/CalculatorContext';
+
 
 const app = () => {
     return(
         <div className="app">
-            <Calculator/>
+            <CalculatorStore>
+                <Calculator/>
+            </CalculatorStore>
         </div>
     )
 };

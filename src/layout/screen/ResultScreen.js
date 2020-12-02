@@ -1,12 +1,15 @@
 import '../../styles/resultScreen.css';
-import React from 'react';
+import React, { useContext } from 'react';
+import CalculatorContext from '../../contexts/CalculatorContext';
 
-const resultScreen = (props) => {
+const ResultScreen = () => {
+    const calculatorInfo = useContext(CalculatorContext);
+
     return (
         <div className="resultScreen">
-            {props.children}
+            { calculatorInfo.displayValue }
         </div>
     )
 };
 
-export default resultScreen;
+export default ResultScreen;
