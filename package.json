@@ -1,5 +1,6 @@
 {
   "name": "calculator_context",
+  "homepage": "https://eriknuber.us/apps/calculator_context/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
